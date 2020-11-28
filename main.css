@@ -1,0 +1,241 @@
+.navbar-brand.logo{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+.main-title{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 14em;
+    color: black;
+    text-align: right;
+    line-height: 0.8em;
+}
+
+.sub-title{
+    margin: 3em 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    letter-spacing: 0.5em;
+    text-align: right;
+}
+
+.brand-title,.brand-sub{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.brand-title{
+    font-weight: 400;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.brand-sub{
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: .4em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.search-icon{
+    background: url(icons/icons8-search.svg);
+}
+
+.menu-icon{
+    background: url(icons/icons8-menu.svg);
+    margin-left: 5em;
+}
+
+
+.menu-icon,.search-icon{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+.album-intro{
+    margin-top: 1em;
+}
+
+.yt-icon{
+    background: url(icons/icons8-play-button.svg);
+}
+
+.insta-icon{
+    background: url(icons/icons8-instagram.svg);
+}
+
+.sound-icon{
+    background: url(icons/icons8-musical-notes-90.png);
+}
+
+.cloud-icon{
+    background: url(icons/icons8-soundcloud.svg);
+}
+
+.fb-icon{
+    background: url(icons/icons8-facebook-f.svg);
+}
+.social-media{
+    display: flex;
+    width: 45%;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.social-icon{
+    width: 30px;
+    height: 30px;
+    background-size: contain;    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.left-side{
+    flex-basis: 40%;
+}
+
+.right-side{
+    flex-basis: 60%;
+}
+
+.album-img{
+    margin-left: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+
+.album-out-label{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    text-align: center;
+    margin: 1.4em 0;
+    letter-spacing: 1em;
+}
+
+.brand-container{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-container-a{
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.brand-container-a:hover{
+    font-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1198px) {
+    .main-title{
+        font-size: 11em;
+    }
+}
+
+@media only screen and (max-width: 982px) {
+    .main-title{
+        font-size: 8em;
+    }
+ 
+    .album-out-label{
+        margin-top: 2.6em;
+    }
+
+    .brand-container {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 770px) {
+    .main-title{
+        font-size: 5em;
+    }
+
+    .menu-icon{
+        margin-left: 2.5em;
+    }
+ 
+    .album-out-label{
+        margin-top: 2.6em;
+        font-size: 1.5em;
+    }
+
+    .brand-container {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        width: 100%;
+    }    
+
+    .sub-title{
+        font-size: .6em;
+    }
+
+    .social-media{
+        width: 80%;
+      }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .left-side{
+        flex-basis: 100%;
+    }
+
+    .album-img{
+        margin-left: 0;
+    }
+
+    .right-side{
+        flex-basis: 100%;
+    }
+
+    .main-title{
+        text-align: center;
+        font-size: 7em;
+        margin: .4em 0;
+    }
+    .sub-title{
+        text-align: center;
+    }
+
+    .social-media{
+      width: 100%;
+    }
+
+    .album-out-label{
+        font-size: 1em;
+    }
+
+    .brand-container {
+        position: unset;
+        margin-bottom: 1.3em;
+    }
+}
+
