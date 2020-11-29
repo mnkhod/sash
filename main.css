@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 .navbar-brand.logo{
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
@@ -120,7 +124,7 @@
     font-weight: 300;
     font-size: 2em;
     text-align: center;
-    margin: 1.4em 0;
+    margin: 1.2em 0;
     letter-spacing: 1em;
 }
 
@@ -239,3 +243,203 @@
     }
 }
 
+
+/* Navigation and Search Component */
+
+body{
+    position: relative;
+}
+
+.black-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.search-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 35vh;
+    width: 100%;
+    z-index: 3; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in-top{
+    animation-name: come-in-from-top;
+    animation-duration: 1s;
+}
+
+
+@keyframes come-in-from-top {
+    from {
+        top: -400px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.close-container{
+    position: absolute;
+    top: 20px;
+    right: 30px;  
+    cursor: pointer;
+}
+
+.search-form{
+    display: flex;
+    flex-basis: 50%;
+    padding-bottom: 1em;
+    border-bottom: 1.3px solid #9B9B9B;
+}
+
+.search_input{
+    border: none;
+    flex: 1;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.close{
+    font-family: 'Oxanium', cursive;
+    color: black;
+    font-size: 2em;
+    opacity: 1;
+}
+
+.z-top{
+    z-index: 1000;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.nav-container{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 4;
+    width: 40%;
+    height: 100vh;
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.nav-container ul {
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    margin: 4em;
+    padding-top: 4em;
+}
+
+.nav-container li {
+    font-family: Oswald;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3%;
+    color: white;
+    flex-grow:1;
+    line-height: 0;
+}
+
+.nav-container li span {
+    border-style: solid;
+    padding: 0;
+    border-color: white;
+    border-width: 0;
+    transition: border-width 2s;
+    transition: padding .2s;
+}
+
+.nav-container li span:hover {
+    border-width: 1em;
+    padding: .5em;
+}
+
+.brand{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    color: white;
+    font-size: 3em;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    transition: font-size .8s;
+}
+
+.brand:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 4.3em;
+}
+
+.nav-container .close{
+    position: absolute;
+    font-size: 3.4em;
+    color: white;
+    top:5%;
+    right:6%;
+}
+
+.fade-in-right{
+    animation-name: come-in-from-right;
+    animation-duration: 1s;
+}
+
+
+@keyframes come-in-from-right {
+    from {
+        right: -800px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+    .nav-container{
+        width: 55%;
+    }
+
+    .nav-container li span:hover {
+        border-width: .3em;
+        padding: .3em;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .nav-container{
+        width: 75%;
+    }
+    .nav-container ul{
+        margin: -1em;
+        padding-top: 9em;
+    }
+}
